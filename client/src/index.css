@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #14171a;
+  color: #edeae2;
+  font-family: "Inter", sans-serif;
+}
+
+/* subtle scanline texture on panels - reinforces the "console" feel
+   without being a decorative gradient wash */
+.telemetry-panel {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.012) 0px,
+    rgba(255, 255, 255, 0.012) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.status-dot {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
+}
